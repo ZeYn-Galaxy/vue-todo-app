@@ -28,6 +28,7 @@ main {
   background-color: #fff;
 }
 
+/* PROFILE START*/
 .profile {
   display: flex;
   flex-direction: column;
@@ -56,8 +57,9 @@ main {
   width: 100%;
   height: 100%;
 }
+/* PROFILE END */
 
-/* STATUS */
+/* STATUS START*/
 .status {
   width: 100%;
   height: 20%;
@@ -119,6 +121,7 @@ main {
   font-weight: 400;
   font-size: 1.5rem;
 }
+/* STATUS END */
 
 /* TASK */
 .task {
@@ -144,24 +147,6 @@ main {
   display: flex;
 }
 
-input[type="checkbox"] {
-  appearance: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 4px solid #F0EEED;
-  cursor: pointer;
-  background-image: linear-gradient(1deg, #ec3f3f, #f31414 99%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #F0EEED;
-}
-
-input[type="checkbox"]:checked {
-  background-image: linear-gradient(1deg, #41e351, #2fff00 99%);
-}
-
-
 .task-item .title {
   height: 100%;
   width: 50%;
@@ -175,6 +160,7 @@ input[type="checkbox"]:checked {
   height: 10%;
   display: flex;
   justify-content: flex-start;
+  gap: 30px;
   align-items: center;
 }
 
@@ -206,17 +192,51 @@ input[type="checkbox"]:checked {
   touch-action: manipulation;
   vertical-align: top;
   white-space: nowrap;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 12px;
+
 }
 
-.button-21:active,
-.button-21:focus {
-  outline: none;
-}
 
-.button-21:hover {
+.add-task:hover {
   background-position: -20px -20px;
 }
 
-.button-21:focus:not(:active) {
+.add-task:focus:not(:active) {
   box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #F0EEED;
+  cursor: pointer;
+  background-image: linear-gradient(1deg, #ec3f3f, #f31414 99%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F0EEED;
+}
+
+input[type="checkbox"]:checked {
+  background-image: linear-gradient(1deg, #41e351, #2fff00 99%);
+}
+
+input[type="text"] {
+  border: none;
+  background-color: #F0EEED;
+  width: 30%;
+  height: 40%;
+  padding: 0 15px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 12px;
+
+}
+
+input[type="text"]::placeholder {
+  font-size: 1.1rem;
+}
+input[type="text"]:focus {
+  outline: none;
 }

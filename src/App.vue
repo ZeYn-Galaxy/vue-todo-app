@@ -6,13 +6,14 @@ export default {
       task: [
         { Title: "Kapan turu?", done: true },
         { Title: "Yoa", done: false }
-      ]
+      ],
+      newTitle: "",
     }
   },
   methods: {
     newTask() {
       this.task.push({
-        Title: "TEST",
+        Title: this.newTitle,
         done: false
       })
     }
@@ -50,6 +51,7 @@ export default {
   <main>
     <div class="header">
       <button class="add-task" role="button" @click="newTask">Add Task</button>
+      <input type="text" v-model="newTitle" placeholder="Task Title">
     </div>
     <div class="task">
       <div class="task-item" v-for="(item, index) in task">
