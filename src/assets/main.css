@@ -1,0 +1,222 @@
+@import './base.css';
+
+*,
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  width: 25%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 75%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+  background-color: #fff;
+}
+
+
+.profile .user-name {
+  color: #000;
+  font-size: 2.25rem;
+
+}
+
+.profile .circle-avatar {
+  border: 5px solid #F0EEED;
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  background-color: #F0EEED;
+}
+
+.profile .circle-avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* STATUS */
+.status {
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.total {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.ongoing {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.completed {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.total #total {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.total .title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.ongoing #ongoing {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.ongoing .title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.completed #completed {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.completed .title {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* TASK */
+.task {
+  width: 100%;
+  height: 90%;
+  background-color: #F0EEED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-item {
+  width: 100%;
+  height: 7%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.task-item .checkbox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #F0EEED;
+  cursor: pointer;
+  background-image: linear-gradient(1deg, #ec3f3f, #f31414 99%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F0EEED;
+}
+
+input[type="checkbox"]:checked {
+  background-image: linear-gradient(1deg, #41e351, #2fff00 99%);
+}
+
+
+.task-item .title {
+  height: 100%;
+  width: 50%;
+  color: #000;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.add-task {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 30px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd, sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s, background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
