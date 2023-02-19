@@ -145,6 +145,7 @@ main {
   width: 50%;
   height: 100%;
   display: flex;
+  align-items: center;
 }
 
 .task-item .title {
@@ -196,13 +197,46 @@ main {
 
 }
 
-
 .add-task:hover {
   background-position: -20px -20px;
 }
 
 .add-task:focus:not(:active) {
   box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+.task-delete {
+  border-radius: 50%;
+  padding: 8px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  color: #bbbbbb;
+  border: 4px solid #F0EEED;
+  cursor: pointer;
+}
+
+.task-delete:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  background-color: #ec3f3f;
+}
+
+.task-list {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 4px solid #F0EEED;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.task-list:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  background-color: #4F58FD;
 }
 
 input[type="checkbox"] {
